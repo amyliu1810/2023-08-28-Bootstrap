@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .nav {
+            width: 366px;
+        }
+
+        .my-context {
+            width: 960px;
+            height: 576px;
+        }
+
+        @media (max-width:1400px) {
+            .my-context {
+                width: 800px;
+            }
+        }
+
+        @media (max-width:992px) {
+            .my-context {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @media (max-width:1200px) {
+            .nav {
+                width: 100%;
+                height: 100px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- all -->
+    <div class="w-100 p-0 vh-100 d-flex flex-column flex-xl-row">
+        <div class="nav bg-secondary flex-shrink-0"></div> <!-- flex-shrink-0 不會被擠壓 -->
+        <div class="my-container bg-success-subtle flex-grow-1 d-flex justify-content-center align-items-center">
+            <div class="my-context d-flex flex-wrap bg-info p-sm-5 p-lg-0"> <!-- p => padding -->
+                <div class="col-12 col-xxl-4 col-xl-12 col-lg-12 bg-warning ">A</div> <!-- lg 小於等於992 都是滿版(col-lg-12) -->
+                <div class="col-12 col-xxl-4 col-xl-6 col-lg-12 bg-danger-subtle">B</div>
+                <div class="col-12 col-xxl-4 col-xl-6 col-lg-12 bg-success">C</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

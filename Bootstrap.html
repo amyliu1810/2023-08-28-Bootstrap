@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引進bootstrap css連結 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            background-color: antiquewhite;
+        }
+
+        .container-md {
+            background-color: lightsalmon;
+        }
+
+        .container-fluid {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<!-- 原本就已經寫好的CSS, 直接放class就能用
+     例如-md -fluid row text-center col-->
+<body>
+
+    <!-- 不滿版 -->
+    <div class="container">container</div>
+
+    <div class="container-md">container-md ≥768px</div>
+
+    <!-- 加上fluid滿版 -->
+    <div class="container-fluid">container-fluid</div>
+    
+    <!-- 'text-center' 文字置中 -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+        </div>
+    </div>
+
+    <!-- row 列 設定, col-5顏色倍數大小*5, bg背景顏色縮寫 -->
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-5 bg-light">
+            1 of 2
+          </div>
+          <div class="col bg-info">
+            2 of 2
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7 bg-warning">
+            1 of 3
+          </div>
+          <div class="col bg-secondary">
+            2 of 3
+          </div>
+          <div class="col bg-primary">
+            3 of 3
+          </div>
+        </div>
+      </div>
+
+    <!-- 引進bootstrap js連結, 連結放最下面 -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
